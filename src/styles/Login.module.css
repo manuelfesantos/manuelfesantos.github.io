@@ -1,0 +1,180 @@
+.loginDiv {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-light);
+}
+
+.loginForm {
+    position: relative;
+    width: 600px;
+    max-width: 90vw;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: var(--secondary-dark);
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0 var(--secondary-dark-less-opacity);
+}
+
+.formField {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.title {
+    font-size: 70px;
+}
+
+.formField input {
+    width: 200px;
+    max-width: 90%;
+    height: 30px;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--primary-light);
+}
+
+.loginDiv button {
+    width: 150px;
+    height: 30px;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--primary-light);
+    color: var(--secondary-dark);
+    cursor: pointer;
+}
+
+.loginDiv button:hover {
+    background-color: var(--secondary-light);
+    color: var(--primary-light);
+}
+
+.loginDiv button:active {
+    background-color: var(--secondary-dark);
+    color: var(--primary-dark);
+}
+
+.loginDiv h3 {
+    cursor: pointer;
+}
+
+.loginDiv h3:hover {
+    color: var(--primary-dark);
+}
+
+.input {
+    text-align: center;
+    color: var(--secondary-dark);
+}
+
+.input::placeholder {
+    color: var(--secondary-dark);
+    opacity: 1;
+}
+
+.input:focus {
+    outline: none;
+    background-color: var(--secondary-light);
+    color: var(--primary-light);
+}
+
+.input:focus::placeholder {
+    color: var(--secondary-light);
+}
+
+.loginPasswordField {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginShowPassword {
+    border-radius: 0 0 10px 10px;
+}
+
+.options {
+    display: flex;
+    gap: 30px;
+}
+
+.loginMessage {
+    position: absolute;
+    bottom: 100px;
+}
+
+.signupMessage {
+    position: absolute;
+    bottom: 70px;
+}
+
+.formPair {
+display: flex;
+}
+
+.buttonsPair {
+    display: flex;
+    gap: 20px;
+}
+
+.formField input.invalid {
+    border: 2px solid red;
+}
+
+@media screen and (max-width: 600px){
+
+    .loginMessage {
+        bottom: 145px;
+    }
+
+    .options {
+        flex-direction: column;
+    }
+
+    .formField input {
+        width: 170px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .formField input {
+        width: 150px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 350px){
+
+    .loginDiv {
+        background-repeat: repeat;
+        position: fixed;
+        height: 800px;
+    }
+
+    .loginForm {
+        height: 750px;
+        gap: 20px;
+    }
+
+    .formField input {
+        width: 200px;
+    }
+    .formPair {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .signupMessage {
+        bottom: 30px;
+    }
+
+
+}

@@ -1,0 +1,91 @@
+.profileDiv {
+    margin-top: 50px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--primary-light);
+    margin-bottom: 50px;
+    gap: 10px;
+}
+
+.userDetails {
+    width: var(--recipe-item-width);
+    max-width: 90vw;
+    min-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 20px;
+    background-color: var(--secondary-light);
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.title {
+    font-weight: bolder;
+    max-width: 90vw;
+    font-size: 50px;
+}
+
+.profilePic {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: var(--recipe-item-width);
+    min-height: 30vw;
+    max-height: 90vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn {
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    border: 0;
+    background-color: var(--primary-light);
+    color: var(--secondary-dark);
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--secondary-dark);
+    color: var(--primary-light);
+}
+
+.btn:active {
+    background-color: var(--secondary-light);
+    color: var(--primary-dark);
+}
+
+.favoritesLink {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 698px) {
+
+    .title {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .userDetails {
+        min-width: 20vw;
+    }
+
+    .profilePic {
+        min-height: 20vw;
+    }
+
+    .title {
+        max-width: 20vw;
+    }
+}

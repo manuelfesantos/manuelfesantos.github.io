@@ -1,0 +1,80 @@
+.recipeDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.recipeData {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    color: var(--primary-light);
+    font-weight: bolder;
+    max-width: 90vw;
+    font-size: 50px;
+}
+
+.img {
+    position: relative;
+    width: var(--recipe-item-width);
+    min-width: 30vw;
+    max-width: 90vw;
+    height: auto;
+    object-fit: contain;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    width: var(--recipe-item-width);
+    min-width: 30vw;
+    max-width: 90vw;
+    border: 0;
+    border-radius: 10px;
+    height: 70px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-light);
+    color: var(--primary-light);
+    font-weight: bold;
+}
+
+.link:hover {
+    background-color: var(--primary-light);
+    color: var(--secondary-light)
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 698px) {
+
+    .title {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .img {
+        min-width: 20vw;
+    }
+
+    .title {
+        max-width: 20vw;
+    }
+}

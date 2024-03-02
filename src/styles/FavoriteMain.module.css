@@ -1,0 +1,45 @@
+.favoriteMain {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.favoriteDiv {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title {
+    color: var(--primary-light);
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+.backBtn {
+    border: 0;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: var(--primary-light);
+    color: var(--secondary-dark);
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.backBtn:hover {
+    background-color: var(--secondary-dark);
+    color: var(--primary-light);
+}
+
+.backBtn:active {
+    background-color: var(--secondary-light);
+    color: var(--primary-light);
+}

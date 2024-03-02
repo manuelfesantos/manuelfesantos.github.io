@@ -1,0 +1,44 @@
+.recipeList {
+    width: auto;
+    margin-left: 0;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    gap: 10px 10px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+
+
+.btn {
+    background-color: var(--secondary-light);
+    color: var(--primary-light);
+    border: 0;
+    width: 300px;
+    max-width: 90vw;
+    height: 50px;
+    border-radius: 10px;
+    transition: background-color 100ms;
+    margin-bottom: 100px;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: var(--primary-dark);
+    color: var(--secondary-light);
+}
+
+.btn:active {
+    background-color: var(--primary-light);
+}
+
+@media screen and (max-width: 677px) {
+    .recipeList {
+        justify-content: center;
+    }
+
+    .recipeList > * {
+        flex: 0;
+    }
+}

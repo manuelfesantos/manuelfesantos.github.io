@@ -1,0 +1,18 @@
+.header {
+    width: var(--recipe-item-width);
+    min-width: 70vw;
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: var(--secondary-dark);
+    font-family: sans-serif ;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+    color: var(--primary-light);
+    text-shadow: 0 0 10px var(--secondary-dark-less-opacity);
+}

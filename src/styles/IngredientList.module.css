@@ -1,0 +1,36 @@
+.ingredients {
+    width: var(--recipe-item-width);
+    min-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--secondary-light);
+    color: var(--primary-light);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: auto auto 30px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.ingredients li {
+    list-style-type: none;
+}
+
+@media screen and (max-width: 698px) {
+    .ingredients {
+        max-width: 90vw;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .ingredients {
+        min-width: 20vw;
+    }
+}

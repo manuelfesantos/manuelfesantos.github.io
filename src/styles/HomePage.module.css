@@ -1,0 +1,55 @@
+.homeDiv {
+    position: relative;
+    margin-top: 30px;
+    width: 80vw;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edamamBadge {
+    width: 300px;
+    margin-left: calc(50vw - 150px);
+    margin-bottom: 20px;
+}
+
+.edamamBadgeBottom {
+    position: fixed;
+    bottom: 20px;
+    width: 300px;
+    margin-left: calc(50vw - 150px);
+}
+
+.homeDiv p {
+    position: absolute;
+    top: 130px;
+    color: var(--primary-light);
+    background-color: var(--secondary-light);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--secondary-dark-less-opacity);
+    cursor: pointer;
+}
+
+.homeDiv p:hover {
+    background-color: var(--primary-light);
+    color: var(--secondary-dark);
+}
+
+.homeDiv p:active {
+    background-color: var(--primary-dark);
+    color: var(--secondary-light);
+}
+
+@media screen and (max-width: 547px){
+    .homeDiv p {
+        top: 190px;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .homeDiv p {
+        font-size: 13px;
+    }
+}
